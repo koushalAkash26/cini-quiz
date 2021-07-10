@@ -177,6 +177,7 @@ input{
   #displayer{
       text-align: center;
       color:white;
+      font-size: x-large;
       margin-top: 10px;
   }
   @media only screen and (max-width: 600px) {

@@ -35,7 +35,8 @@ function resultFun(res,qnum){
             document.getElementById(userChoice).classList.remove('color')
             count=count+1
             if(count===9){
-                displayPannel.style.display="none"
+                displayPannel.style.display="block"
+                displayPannel.innerHTML="🔥 Beast Mode 🔥"
                 questionbox[0].style.display="none"
                 mainBox[0].style.display="block"
                 head.style.display="block"
@@ -66,7 +67,8 @@ function resultFun(res,qnum){
             head.style.display="block"
             displayPannel.style.display="block"
             if(count===9){
-                displayPannel.style.display="🔥 Beast Mode 🔥"
+        
+                displayPannel.innerHTML="🔥 Beast Mode 🔥"
             }
 
         })
