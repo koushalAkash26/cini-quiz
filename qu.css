@@ -187,6 +187,9 @@ input{
     .container{
         padding: 10px 10px 10px 10px;
     }
+    #displayer{
+        font-size: large;
+    }
   }
   
 
