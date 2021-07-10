@@ -66,7 +66,7 @@ function resultFun(res,qnum){
             head.style.display="block"
             displayPannel.style.display="block"
             if(count===9){
-                displayPannel.style.display="none"
+                displayPannel.style.display="🔥 Beast Mode 🔥"
             }
 
         })
