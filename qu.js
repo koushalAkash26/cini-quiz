@@ -1,12 +1,4 @@
-const b1_div=document.getElementById("b1")
-const b2_div=document.getElementById("b2")
-const b3_div=document.getElementById("b3")
-const b4_div=document.getElementById("b4")
-const b5_div=document.getElementById("b5")
-const b6_div=document.getElementById("b6")
-const b7_div=document.getElementById("b7")
-const b8_div=document.getElementById("b8")
-const b9_div=document.getElementById("b9")
+let box =document.querySelectorAll(".color");
 let question=document.getElementById("question")
 let op1_span=document.getElementById("option1")
 let op2_span=document.getElementById("option2")
@@ -137,15 +129,16 @@ function display(num){
 
 }
 
-b1_div.addEventListener('click',()=>display(1))
-b2_div.addEventListener('click',()=>display(2))
-b3_div.addEventListener('click',()=>display(3))
-b4_div.addEventListener('click',()=>display(4))
-b5_div.addEventListener('click',()=>display(5))
-b6_div.addEventListener('click',()=>display(6))
-b7_div.addEventListener('click',()=>display(7))
-b8_div.addEventListener('click',()=>display(8))
-b9_div.addEventListener('click',()=>display(9))
+box.forEach((ele) => {
+    ele.addEventListener('click', (e) => {
+      let quSeq=e.target.id;
+      console.log(quSeq[1])
+      let num=parseInt(quSeq[1])
+      console.log(num)
+      display(num)
+     
+    })
+});
 button.addEventListener('click',()=>checkResult1(qnum.innerHTML))
 close.addEventListener('click',()=>{
     mainBox[0].style.display="block"
